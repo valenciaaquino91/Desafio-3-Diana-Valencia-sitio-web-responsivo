@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" href="Imagenes_de_logos/favicon.ico.png" type="image/x-icon">
+	
+    <title>El Atelier del Artista - Obras Artísticas</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img 
+                            src="Imagenes_de_logos/logo_atelier.png" 
+                            alt="Logo El Atelier del Artista" 
+                        > 
+                        
+                    </a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="menu-principal">
+                    <ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Inicio</a></li>
+                        <li><a href="materiales.html">Materiales de Arte</a></li>
+                        <li><a href="obras.html">Obras Artísticas</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#modal-usuario"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Usuario</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#modal-carrito"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Carrito (<span id="contador-carrito">0</span>)</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" style="padding-top: 70px;">
+        <h1 class="text-center section-title">Nuestra Galería de Obras</h1>
+
+        <section class="row">
+            
+                      
+          <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="panel panel-default obra" data-nombre="El silencio del piano y la reserva" data-precio="70.00">
+                    <div class="panel-body text-center">
+                        <h4>El silencio del piano y la reserva</h4>
+                        
+                        <div id="carousel-obra-1" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-obra-1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-obra-1" data-slide-to="1"></li>
+                                <li data-target="#carousel-obra-1" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Obra_1.jpg" alt="Óleo 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Obra_1.jpg" alt="Óleo 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Obra_1.jpg" alt="Óleo 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-obra-1" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-obra-1" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        <p>Nombre artista: Dinora Guzman</p><br>
+						<p>Título de obra: El silencio del piano y la reserva</p><br>
+						<p>Técnica: Oleo</p><br>
+						<p>Medidas: 90 x 120 x 3 cm</p><br>
+						<p>Precio</p><br>				
+                        <p><strong> $70.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir a la Colección</a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="panel panel-default obra" data-nombre="Gerrero Fragmentado" data-precio="40.00">
+                    <div class="panel-body text-center">
+                        <h4>Gerrero Fracmentado</h4>
+                        
+                        <div id="carousel-obra-3" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-obra-3" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-obra-3" data-slide-to="1"></li>
+                                <li data-target="#carousel-obra-3" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Obra_3.jpg" alt="Escultura 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Obra_3_2.jpg" alt="Escultura 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Obra_3_3.jpg" alt="Escultura 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-obra-3" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-obra-3" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        
+                        <p>Nombre artista: Dinora Guzman</p><br>
+						<p>Título de obra: El Gerrero Fragmentado</p><br>
+						<p>Técnica: Carboncillo </p><br>
+						<p>Medidas: 75 x 50 com</p><br>
+						<p>Precio</p><br>
+                        <p><strong> $40.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir a la Colección</a>
+                    </div>
+                </div>
+            </div>
+            
+			
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="panel panel-default obra" data-nombre="El Último Yeloco" data-precio="50.00">
+                    <div class="panel-body text-center">
+                        <h4>El Último Yeloco</h4>
+                        
+                        <div id="carousel-obra-4" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-obra-4" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-obra-4" data-slide-to="1"></li>
+                                <li data-target="#carousel-obra-4" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Obra_4_1.jpg" alt="Paisaje 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Obra_4_1.jpg" alt="Paisaje 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Obra_4_1.jpg" alt="Paisaje 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-obra-4" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-obra-4" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        
+                        <p>Nombre artista: Dinora Guzman</p><br>
+						<p>Título de obra: El Ultimo Yeloco</p><br>
+						<p>Técnica: Acrilico sobre Lienzo</p><br>
+						<p>Medidas: 40 x 50 cm</p><br>
+						<p>Precio</p><br>
+                        <p><strong> $50.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir a la Colección</a>
+                    </div>
+                </div>
+            </div>
+
+			<div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="panel panel-default obra" data-nombre="Muro de Flores Suchitoto" data-precio="25.00">
+                    <div class="panel-body text-center">
+                        <h4>Muro de Flores Suchitoto</h4>
+                        
+                        <div id="carousel-obra-2" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-obra-2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-obra-2" data-slide-to="1"></li>
+                                <li data-target="#carousel-obra-2" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Obra_2.jpg" alt="Acuarela 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Obra_2.jpg" alt="Acuarela 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Obra_2.jpg" alt="Acuarela 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-obra-2" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-obra-2" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+
+                        <p>Nombre artista: Dinora Guzman</p><br>
+						<p>Título de obra: Muro de Flores Suchitoto</p><br>
+						<p>Técnica: Acuarela</p><br>
+						<p>Medidas: 35 x 50 cm:</p><br>
+						<p>Precio</p><br>
+                        <p><strong> $25.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir a la Colección</a>
+                    </div>
+                </div>
+            </div>	
+			
+			
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="panel panel-default obra" data-nombre="Paisaje Calle Arce" data-precio="70.00">
+                    <div class="panel-body text-center">
+                        <h4>Paisaje Calle Arce</h4>
+                        
+                        <div id="carousel-obra-5" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-obra-5" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-obra-5" data-slide-to="1"></li>
+                                <li data-target="#carousel-obra-5" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Paisaje_calle_arce1.jpg" alt="Carbón 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Paisaje_calle_arce1.jpg" alt="Carbón 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Paisaje_calle_arce1.jpg" alt="Carbón 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-obra-5" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-obra-5" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        
+                        <p>Nombre artista: Dinora Guzman</p><br>
+						<p>Título de obra: Paisaje Calle Arce</p><br>
+						<p>Técnica: Acrilico sobre lienzo</p><br>
+						<p>Medidas: 60 x 80 x 2 cmcm</p><br>
+						<p>Precio</p><br>
+                        <p><strong> $70.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir a la Colección</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="panel panel-default obra" data-nombre="Los Cobanos" data-precio="50.00">
+                    <div class="panel-body text-center">
+                        <h4>Los Cobanos</h4>
+                        
+                        <div id="carousel-obra-6" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-obra-6" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-obra-6" data-slide-to="1"></li>
+                                <li data-target="#carousel-obra-6" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Playa1.jpg" alt="Digital 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Playa1.jpg" alt="Digital 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Playa1.jpg" alt="Digital 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-obra-6" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-obra-6" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        
+                        <p>Nombre artista: Dinora Guzman</p><br>
+						<p>Título de obra: Los Cobanos </p><br>
+						<p>Técnica: Acuarela </p><br>
+						<p>Medidas: 40 x 25 cm</p><br>
+						<p>Precio</p><br>
+                        <p><strong>$50.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir a la Colección</a>
+                    </div>
+                </div>
+            </div>
+
+			
+		
+			
+			
+        </section>
+
+    </main>
+
+    <div class="modal fade" id="modal-usuario" tabindex="-1" role="dialog" aria-labelledby="usuario-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-creative">
+                <div class="modal-header header-creative">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="usuario-label">Acceso / Registro</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="registro-form" action="https://formspree.io/f/xyznbeke" method="POST">
+                        <h4 class="text-center">¡Regístrate en El Atelier!</h4>
+                        
+                        <div class="form-group">
+                            <label for="nombre-apellido">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="nombre-apellido" name="Nombre y Apellido" placeholder="Ej: Ana Landaverde" required minlength="3">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo-electronico">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correo-electronico" name="Correo Electrónico" placeholder="mitiendatematica@gmail.com
+" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Número de Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" name="Número de Teléfono" placeholder="Ej: 7777-8888" required pattern="[0-9]{4}-[0-9]{4}">
+                        </div>
+                        <div class="form-group">
+                            <label for="clave">Clave</label>
+                            <input 
+                                type="password" 
+                                class="form-control" 
+                                id="clave" 
+                              
+                                placeholder="Mínimo 8 caracteres (Mayús, Minús, Número, Símbolo)" 
+                                required 
+                                minlength="8"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{8,}$"
+                                title="La clave debe tener al menos 8 caracteres, incluyendo una mayúscula, una minúscula, un número y un símbolo (!@#$%^&*)."
+                            >
+                            <div id="password-strength-meter" class="progress" style="margin-top: 5px;">
+                                <div id="password-strength-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-creative btn-block">Registrarse</button>
+                        
+                        <hr>
+                        
+                        <p class="text-center">
+                            <a href="index.html" class="btn btn-invitado">Ingresar como Invitado</a>
+                            <a href="mailto:mitiendatematica@gmail.com?subject=Recuperación%20de%20Contraseña%20-%20El%20Atelier%20del%20Artista" class="btn btn-link link-creative">Recuperar Contraseña</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-carrito" tabindex="-1" role="dialog" aria-labelledby="carrito-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-creative">
+                <div class="modal-header header-creative">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="carrito-label">Mi Carrito de Compras</h4>
+                </div>
+                <div class="modal-body">
+                    <ul id="lista-carrito" class="list-group">
+                        </ul>
+                    <p>Total: **$<span id="total-carrito">0.00</span>**</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Seguir Comprando</button>
+                    <button type="button" class="btn btn-creative">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+ <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2025 El Atelier del Artista. Todos los derechos reservados.</p>
+            <a href="https://www.facebook.com/Tienda.Tematicasv" target="_blank"><img src="Imagenes_de_interfaz/facebook.png" alt="Facebook" class="social-icon"></a>
+            <a href="https://www.instagram.com/tienda.tematica/" target="_blank"><img src="Imagenes_de_interfaz/instagram.png" alt="Instagram" class="social-icon"></a>
+            <a href="https://wa.me/50370443932" target="_blank"><img src="Imagenes_de_interfaz/whatsapp.png" alt="WhatsApp" class="social-icon"></a>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

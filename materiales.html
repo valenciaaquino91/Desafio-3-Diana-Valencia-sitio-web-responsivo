@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" href="Imagenes_de_logos/favicon.ico.png" type="image/x-icon">
+    
+    <title>El Atelier del Artista - Materiales de Arte</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img 
+                            src="Imagenes_de_logos/logo_atelier.png" 
+                            alt="Logo El Atelier del Artista" 
+                        > 
+                        
+                    </a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="menu-principal">
+                    <ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Inicio</a></li>
+                        <li><a href="materiales.html">Materiales de Arte</a></li>
+                        <li><a href="obras.html">Obras Artísticas</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#modal-usuario"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Usuario</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#modal-carrito"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Carrito (<span id="contador-carrito">0</span>)</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" style="padding-top: 70px;">
+        <h1 class="text-center section-title">Catálogo de Materiales Esenciales</h1>
+
+        <section class="row">
+            
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="panel panel-default producto" data-nombre="Pinceles Acuarela" data-precio="3.00">
+                    <div class="panel-body text-center">
+                        <h4>Pinceles Acuarela (Set 3)</h4>
+                        <div id="carousel-prod-1" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators"><li data-target="#carousel-prod-1" data-slide-to="0" class="active"></li><li data-target="#carousel-prod-1" data-slide-to="1"></li><li data-target="#carousel-prod-1" data-slide-to="2"></li></ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Pincel_acuarela1.jpg" alt="Pincel Acuarela 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Pincel_acuarela2.jpg" alt="Pincel Acuarela 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Pincel_acuarela3.jpg" alt="Pincel Acuarela 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-prod-1" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-prod-1" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        <p>Set de 3 pinceles para acuarela.</p>
+                        <p><strong>$3.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="panel panel-default producto" data-nombre="Moldeador Punta de Goma" data-precio="6.00">
+                    <div class="panel-body text-center">
+                        <h4>Moldeador Punta de Goma (Set 5)</h4>
+                        <div id="carousel-prod-2" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators"><li data-target="#carousel-prod-2" data-slide-to="0" class="active"></li><li data-target="#carousel-prod-2" data-slide-to="1"></li><li data-target="#carousel-prod-2" data-slide-to="2"></li></ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Moldeadordegoma1.jpg" alt="Moldeador Goma 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Moldeadordegoma2.jpg" alt="Moldeador Goma 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Moldeadordegoma3.jpg" alt="Moldeador Goma 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-prod-2" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-prod-2" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        <p>5 piezas con diferentes puntas para moldear arcilla y detalles en pintura.</p>
+                        <p><strong>$6.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="panel panel-default producto" data-nombre="Kit Pincel Difuminador" data-precio="8.00">
+                    <div class="panel-body text-center">
+                        <h4>Kit Difuminador (Set 6 piezas)</h4>
+                        <div id="carousel-prod-3" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators"><li data-target="#carousel-prod-3" data-slide-to="0" class="active"></li><li data-target="#carousel-prod-3" data-slide-to="1"></li><li data-target="#carousel-prod-3" data-slide-to="2"></li></ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Difumigador1.jpg" alt="Difuminador 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Difumigador2.jpg" alt="Difuminador 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Difumigador3.jpg" alt="Difuminador 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-prod-3" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-prod-3" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        <p>Set de pinceles para difuminar, lavables y reutilizables.</p>
+                        <p><strong>$8.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="panel panel-default producto" data-nombre="Kit de Espátulas" data-precio="8.00">
+                    <div class="panel-body text-center">
+                        <h4>Kit de Espátulas de Pintura (Set 5)</h4>
+                        <div id="carousel-prod-4" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators"><li data-target="#carousel-prod-4" data-slide-to="0" class="active"></li><li data-target="#carousel-prod-4" data-slide-to="1"></li><li data-target="#carousel-prod-4" data-slide-to="2"></li></ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Kit_de_Espátulas_de_Pintura_(Set 5)_1.jpg" alt="Espátula 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Kit_de_Espátulas_de_Pintura_(Set 5)_2.jpg" alt="Espátula 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Kit_de_Espátulas_de_Pintura_(Set 5)_3.jpg" alt="Espátula 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-prod-4" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-prod-4" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        <p>5 espátulas metálicas de diferentes formas para óleo y acrílico.</p>
+                        <p><strong>$8.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            
+            </section>
+
+        <section class="row">
+            
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="panel panel-default producto" data-nombre="Espatulas metalicas para pintura individuales" data-precio="1.25">
+                    <div class="panel-body text-center">
+                        <h4>Espatulas de Pintor Individual</h4>
+                        <div id="carousel-prod-5" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators"><li data-target="#carousel-prod-5" data-slide-to="0" class="active"></li><li data-target="#carousel-prod-5" data-slide-to="1"></li><li data-target="#carousel-prod-5" data-slide-to="2"></li></ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Espatulas_de_Pintor_Individual1.jpg" alt="Espatulas metalicas para pintura individuales" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Espatulas_de_Pintor_Individual2.jpg" alt="Espatulas metalicas para pintura individuales" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Espatulas_de_Pintor_Individual3.jpg" alt="Espatulas metalicas para pintura individuales" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-prod-5" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-prod-5" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        <p>Espatulas de pintor, individuales, raspador de textura.</p>
+                        <p><strong>$1.25</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="panel panel-default producto" data-nombre="Kit Pinceles Esponja" data-precio="2.00">
+                    <div class="panel-body text-center">
+                        <h4>Kit Pinceles de Esponja (Set 4)</h4>
+                        <div id="carousel-prod-6" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators"><li data-target="#carousel-prod-6" data-slide-to="0" class="active"></li><li data-target="#carousel-prod-6" data-slide-to="1"></li><li data-target="#carousel-prod-6" data-slide-to="2"></li></ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Kit_Pinceles_Esponja1.jpg" alt="Pincel Esponja 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Kit_Pinceles_Esponja2.jpg" alt="Pincel Esponja 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Kit_Pinceles_Esponja3.jpg" alt="Pincel Esponja 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-prod-6" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-prod-6" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        <p>4 pinceles con cabezal de esponja para barnizado y grandes áreas.</p>
+                        <p><strong>$2.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="panel panel-default producto" data-nombre="Juego Herramientas Cerámica (Set 6 con 12 cabezas diferentes)" data-precio="8.00">
+                    <div class="panel-body text-center">
+                        <h4>Juego Herramientas Cerámica (Set 6 con 12 cabezas diferentes)</h4>
+                        <div id="carousel-prod-7" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators"><li data-target="#carousel-prod-7" data-slide-to="0" class="active"></li><li data-target="#carousel-prod-7" data-slide-to="1"></li><li data-target="#carousel-prod-7" data-slide-to="2"></li></ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Juego_Herramientas_Cerámica1.jpg" alt="Herramienta Cerámica 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Juego_Herramientas_Cerámica2.jpg" alt="Herramienta Cerámica 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Juego_Herramientas_Cerámica3.jpg" alt="Herramienta Cerámica 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-prod-7" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-prod-7" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        <p>Set profesional de 6 piezas para tallar y modelar cerámica, cada una tiene 2 diferentes diseños.</p>
+                        <p><strong>$8.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="panel panel-default producto" data-nombre="Herramientas Moldeador Arcilla" data-precio="10.00">
+                    <div class="panel-body text-center">
+                        <h4>Herramientas Moldeador Arcilla (Set 11 cada una con 2 puntas diferentes)</h4>
+                        <div id="carousel-prod-8" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators"><li data-target="#carousel-prod-8" data-slide-to="0" class="active"></li><li data-target="#carousel-prod-8" data-slide-to="1"></li><li data-target="#carousel-prod-8" data-slide-to="2"></li></ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Herramientas_Moldeador_Arcilla1.jpg" alt="Herramienta Arcilla 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Herramientas_Moldeador_Arcilla2.jpg" alt="Herramienta Arcilla 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Herramientas_Moldeador_Arcilla3.jpg" alt="Herramienta Arcilla 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-prod-8" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-prod-8" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        <p>Kit de 11 herramientas de madera y metal para detallado de arcilla polimérica. Cada uno tiene 2 puntas distintas</p>
+                        <p><strong>$10.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            
+            </section>
+
+        <section class="row">
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="panel panel-default producto" data-nombre="Pinceles Pelo de Lobo" data-precio="5.00">
+                    <div class="panel-body text-center">
+                        <h4>Pinceles Pelo de Lobo</h4>
+                        <div id="carousel-prod-9" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators"><li data-target="#carousel-prod-9" data-slide-to="0" class="active"></li><li data-target="#carousel-prod-9" data-slide-to="1"></li><li data-target="#carousel-prod-9" data-slide-to="2"></li></ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Pinceles_Pelo_de_Lobo1.jpg" alt="Pelo de Lobo 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Pinceles_Pelo_de_Lobo2.jpg" alt="Pelo de Lobo 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Pinceles_Pelo_de_Lobo3.jpg" alt="Pelo de Lobo 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-prod-9" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-prod-9" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        <p>Pinceles de alta calidad para trazos finos y precisos en tinta china y acuarela.</p>
+                        <p><strong>$5.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="panel panel-default producto" data-nombre="Herramientas de Punteado (Set 5, doble punta)" data-precio="6.00">
+                    <div class="panel-body text-center">
+                        <h4>Herramientas de Punteado (Set 5, doble punta)</h4>
+                        <div id="carousel-prod-10" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators"><li data-target="#carousel-prod-10" data-slide-to="0" class="active"></li><li data-target="#carousel-prod-10" data-slide-to="1"></li><li data-target="#carousel-prod-10" data-slide-to="2"></li></ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Herramientas_de_Punteado1.jpg" alt="Punteado 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Herramientas_de_Punteado2.jpg" alt="Punteado 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Herramientas_de_Punteado3.jpg" alt="Punteado 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-prod-10" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-prod-10" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        <p>Set de 15 herramientas para crear patrones de puntos y diseños en mandala.</p>
+                        <p><strong>$6.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="panel panel-default producto" data-nombre="Paletas de Pintor" data-precio="5.00">
+                    <div class="panel-body text-center">
+                        <h4>Tablas de Pintor (Paletas)</h4>
+                        <div id="carousel-prod-11" class="carousel slide product-carousel" data-ride="carousel">
+                            <ol class="carousel-indicators"><li data-target="#carousel-prod-11" data-slide-to="0" class="active"></li><li data-target="#carousel-prod-11" data-slide-to="1"></li><li data-target="#carousel-prod-11" data-slide-to="2"></li></ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="Imagene_de_articulos/Tablas_de_Pintor1.jpg" alt="Paleta 1" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Tablas_de_Pintor2.jpg" alt="Paleta 2" class="img-responsive center-block"></div>
+                                <div class="item"><img src="Imagene_de_articulos/Tablas_de_Pintor3.jpg" alt="Paleta 3" class="img-responsive center-block"></div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-prod-11" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a class="right carousel-control" href="#carousel-prod-11" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                        <p>Paleta de madera ergonómica de 30x20cm para mezcla de óleos y acrílicos.</p>
+                        <p><strong>$5.00</strong></p>
+                        <a class="btn btn-creative agregar-carrito" href="#" role="button">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            
+            </section>
+
+    </main>
+
+    <div class="modal fade" id="modal-usuario" tabindex="-1" role="dialog" aria-labelledby="usuario-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-creative">
+                <div class="modal-header header-creative">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="usuario-label">Acceso / Registro</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="registro-form" action="https://formspree.io/f/xyznbeke" method="POST">
+                        <h4 class="text-center">¡Regístrate en El Atelier!</h4>
+                        
+                        <div class="form-group">
+                            <label for="nombre-apellido">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="nombre-apellido" name="Nombre y Apellido" placeholder="Ej: Ana Landaverde" required minlength="3">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo-electronico">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correo-electronico" name="Correo Electrónico" placeholder="mitiendatematica@gmail.com
+" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Número de Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" name="Número de Teléfono" placeholder="Ej: 7777-8888" required pattern="[0-9]{4}-[0-9]{4}">
+                        </div>
+                        <div class="form-group">
+                            <label for="clave">Clave</label>
+                            <input 
+                                type="password" 
+                                class="form-control" 
+                                id="clave" 
+                               
+                                placeholder="Mínimo 8 caracteres (Mayús, Minús, Número, Símbolo)" 
+                                required 
+                                minlength="8"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{8,}$"
+                                title="La clave debe tener al menos 8 caracteres, incluyendo una mayúscula, una minúscula, un número y un símbolo (!@#$%^&*)."
+                            >
+                            <div id="password-strength-meter" class="progress" style="margin-top: 5px;">
+                                <div id="password-strength-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-creative btn-block">Registrarse</button>
+                        
+                        <hr>
+                        
+                        <p class="text-center">
+                            <a href="index.html" class="btn btn-invitado">Ingresar como Invitado</a>
+                            <a href="mailto:mitiendatematica@gmail.com?subject=Recuperación%20de%20Contraseña%20-%20El%20Atelier%20del%20Artista" class="btn btn-link link-creative">Recuperar Contraseña</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-carrito" tabindex="-1" role="dialog" aria-labelledby="carrito-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-creative">
+                <div class="modal-header header-creative">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="carrito-label">Mi Carrito de Compras</h4>
+                </div>
+                <div class="modal-body">
+                    <ul id="lista-carrito" class="list-group">
+                        </ul>
+                    <p>Total: **$<span id="total-carrito">0.00</span>**</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Seguir Comprando</button>
+                    <button type="button" class="btn btn-creative">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2025 El Atelier del Artista. Todos los derechos reservados.</p>
+            <a href="https://www.facebook.com/Tienda.Tematicasv" target="_blank"><img src="Imagenes_de_interfaz/facebook.png" alt="Facebook" class="social-icon"></a>
+            <a href="https://www.instagram.com/tienda.tematica/" target="_blank"><img src="Imagenes_de_interfaz/instagram.png" alt="Instagram" class="social-icon"></a>
+            <a href="https://wa.me/50370443932" target="_blank"><img src="Imagenes_de_interfaz/whatsapp.png" alt="WhatsApp" class="social-icon"></a>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+<</html>

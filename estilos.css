@@ -1,0 +1,387 @@
+/* Definición de la variable de color principal */
+:root {
+    --color-principal: #00CED1; /* Turquesa Oscuro (Dark Turquoise) */
+    --color-secundario: #333; /* Gris oscuro para texto/contraste */
+}
+
+/* ========================================= */
+/* Estilos Generales y Navbar (Corregido) */
+/* ========================================= */
+
+body {
+    /* Ajustamos el padding-top para la nueva altura del navbar */
+    padding-top: 100px; 
+    background-color: #f0fafa;
+    font-family: 'Arial', sans-serif; 
+}
+
+/* Navbar Personalizado (La Barra Negra) */
+.navbar-inverse {
+    background-color: var(--color-secundario); 
+    border-color: var(--color-principal);
+    /* Aumentamos la altura del navbar para el logo grande */
+    min-height: 100px;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: var(--color-principal) !important; 
+    font-size: 1.5em; 
+    /* Ajuste de altura para el logo (mantiene la altura base del navbar-brand) */
+    height: 100px; 
+    padding-top: 15px; /* Ajuste para centrar verticalmente el texto del brand */
+    padding-bottom: 15px;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    /* Ajuste del padding para centrar verticalmente los enlaces con el logo de 100px de alto */
+    padding-top: 40px; 
+    padding-bottom: 40px; 
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: var(--color-principal);
+    background-color: #444;
+}
+
+/* ESTILOS ESPECÍFICOS PARA EL LOGO */
+.navbar-brand img {
+    height: 120px; /* Reducido ligeramente para ajustarse al navbar-brand de 100px */
+    margin-top: 0px; 
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px; 
+}
+
+/* Títulos y Jumbotron */
+.section-title {
+    color: var(--color-secundario);
+    border-bottom: 5px solid var(--color-principal);
+    padding-bottom: 10px;
+    margin-bottom: 80px;
+    font-family: 'Georgia', serif;
+}
+.section-title-small {
+    color: var(--color-secundario);
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+    text-align: center;
+}
+.custom-jumbotron {
+    background-color: #fff;
+    border: 1px solid var(--color-principal);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+/* ========================================= */
+/* ESTILOS DE MODALES Y FORMULARIO */
+/* ========================================= */
+
+/* Bordes más redondeados del Modal */
+.modal-creative .modal-content {
+    border-radius: 20px; 
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.header-creative {
+    background-color: var(--color-principal) !important;
+    color: white !important;
+    border-color: var(--color-principal) !important;
+    border-radius: 20px 20px 0 0 !important; 
+}
+
+/* Bordes redondeados para los inputs */
+.form-control {
+    border-radius: 8px; 
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* ========================================= */
+/* VALIDACIÓN Y FEEDBACK VISUAL CSS */
+/* ========================================= */
+
+/* Indicador visual de campos obligatorios/incorrectos (feedback visual) */
+.form-control:required:invalid {
+    border-color: #f44336; /* Rojo para error */
+    box-shadow: 0 0 5px rgba(244, 67, 54, 0.4);
+}
+
+/* Feedback al enfocar un campo no válido (mensajes de error) */
+.form-control:focus:invalid {
+    border-color: #ff9800; /* Naranja para advertencia/foco en error */
+}
+
+/* Feedback al enfocar un campo VÁLIDO */
+.form-control:valid {
+    border-color: #4CAF50; 
+}
+.form-control:focus:valid {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+/* ========================================= */
+/* ESTILOS INDICADOR DE FORTALEZA DE CLAVE */
+/* ========================================= */
+#password-strength-meter {
+    height: 10px; 
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+#password-strength-bar {
+    transition: width 0.3s ease, background-color 0.3s ease;
+    height: 100%;
+    line-height: 10px;
+    font-size: 8px;
+    color: #333; 
+    text-align: right;
+    padding-right: 5px;
+    background-color: #ccc; 
+}
+
+
+/* ========================================= */
+/* DISEÑO DE BOTONES (Hover effects) */
+/* ========================================= */
+
+/* Botón de Registro/Compra (btn-creative) - Efecto Hover */
+.btn-creative {
+    background-color: var(--color-principal);
+    color: white;
+    border: 2px solid var(--color-principal);
+    border-radius: 25px; 
+    padding: 10px 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-creative:hover,
+.btn-creative:focus {
+    background-color: #009999; 
+    color: white;
+    border-color: #009999;
+    transform: scale(1.03); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón Ingresar como Invitado (btn-invitado) - Efecto Hover */
+.btn-invitado {
+    background-color: #fff;
+    color: var(--color-principal) !important;
+    border: 2px solid var(--color-principal);
+    border-radius: 25px; 
+    padding: 8px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.btn-invitado:hover,
+.btn-invitado:focus {
+    background-color: var(--color-principal);
+    color: white !important;
+    border-color: var(--color-principal);
+}
+
+/* ========================================= */
+/* Estilos Específicos de Páginas */
+/* ========================================= */
+
+.link-panel {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.img-link-space {
+    height: 200px;
+    border: 1px dashed #ccc;
+    object-fit: contain;
+}
+#carousel-destacado .item img {
+    height: 500px; 
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid var(--color-principal);
+}
+.producto, .obra {
+    margin-bottom: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.producto:hover, .obra:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* SOLUCIÓN DE ALINEACIÓN VERTICAL (Panel Body con Altura Mínima) */
+.producto .panel-body,
+.obra .panel-body {
+    min-height: 400px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+}
+.producto .panel-body p:last-of-type,
+.obra .panel-body p:last-of-type {
+    margin-bottom: 5px; 
+}
+.producto .panel-body .agregar-carrito,
+.obra .panel-body .agregar-carrito {
+    margin-top: auto; 
+}
+/* FIN SOLUCIÓN DE ALINEACIÓN VERTICAL */
+
+
+/* ESTILO CLAVE para carruseles de productos/obras */
+.img-responsive.center-block {
+    height: 180px; 
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* ========================================= */
+/* Footer y Redes Sociales (Corregido) */
+/* ========================================= */
+footer {
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Estilo para los iconos de redes sociales en el footer */
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    opacity: 1; /* Establecido a 1 para asegurar colores completos */
+    /* ELIMINACIÓN DE filter: invert(100%); para mostrar el color original */
+    transition: opacity 0.3s, filter 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    opacity: 1;
+    /* Efecto de sombra para indicar hover sin invertir colores */
+    filter: drop-shadow(0 0 5px var(--color-principal));
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Ajustes para navbar en móvil/tablet */
+    .navbar-inverse .navbar-nav > li > a {
+        padding-top: 15px; 
+        padding-bottom: 15px; 
+    }
+    .navbar-inverse {
+        min-height: 50px; /* Altura estándar en móvil */
+    }
+    body {
+        padding-top: 50px;
+    }
+    
+    #carousel-destacado .item img {
+        height: 250px;
+        margin-top: 10px;
+    }
+    .img-link-space {
+        height: 150px;
+    }
+    /* En móvil/tablet, ajusta la altura mínima para evitar espacios raros */
+    .producto .panel-body,
+    .obra .panel-body {
+        min-height: auto; 
+    }
+    .navbar-brand img {
+        height: 40px; /* Logo más pequeño en móvil */
+    }
+}
+@media (min-width: 481px) and (max-width: 992px) { /* Modificado para una mejor transición en tablets */
+      #carousel-destacado .item img {
+          height: 350px;
+      }
+      /* En tablet (2 columnas), mantén la altura mínima para uniformidad */
+      .producto .panel-body,
+      .obra .panel-body {
+          min-height: 450px; 
+      }
+}
+
+/* ========================================= */
+/* MODIFICACIONES ESPECÍFICAS PARA GALERÍA DE OBRAS (SOLUCIÓN DE ALINEACIÓN) */
+/* ========================================= */
+
+/* Modificación de la clase .row de Bootstrap para usar Flexbox y corregir el desajuste */
+.row {
+    /* Hacemos que todas las columnas dentro de la fila se comporten como Flex */
+    display: flex;
+    /* Permite que las columnas se envuelvan a la siguiente línea */
+    flex-wrap: wrap; 
+    /* CLAVE: Alinea los elementos al inicio de su contenedor (arriba),
+       ignorando la altura de sus vecinos de fila superior. */
+    align-items: flex-start;
+}
+
+/* Ajuste de altura mínima para las tarjetas de obra en escritorio (3 columnas) */
+@media (min-width: 992px) {
+    /* Forzamos la misma altura mínima para todas las tarjetas
+       para que la alineación se vea limpia y uniforme. */
+    .obra .panel-body {
+        min-height: 500px; 
+    }
+}
+
+/* ========================================= */
+/* ESTILOS PARA LA NUEVA INFORMACIÓN DE OBRA */
+/* ========================================= */
+
+.info-obra {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 0 5px; 
+    border-top: 1px solid #eee; 
+    padding-top: 10px;
+    font-size: 0.9em;
+}
+
+.info-obra dl {
+    margin-bottom: 0; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-obra dt {
+    /* Término (ej: Artista:) */
+    font-weight: bold;
+    color: var(--color-secundario);
+    /* Ocupa 30% del ancho */
+    width: 30%; 
+    padding-right: 5px;
+    text-align: right;
+}
+
+.info-obra dd {
+    /* Descripción (ej: Nombre del Artista) */
+    /* Ocupa el 70% restante */
+    width: 70%;
+    margin-left: 0;
+    margin-bottom: 5px; 
+    color: #555;
+}
+
+/* Estilo para el precio */
+.precio-obra {
+    font-size: 1.4em;
+    color: var(--color-secundario);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
